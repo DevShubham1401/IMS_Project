@@ -1,0 +1,76 @@
+Documents Table:- 
+CREATE TABLE document (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    bank_name VARCHAR(255) NOT NULL,
+    account_number VARCHAR(255) NOT NULL,
+    ifsc_code VARCHAR(255) NOT NULL,
+    bank_document VARCHAR(255) NOT NULL,
+    aadhar_number VARCHAR(255) NOT NULL,
+    aadhar_card VARCHAR(255) NOT NULL,
+    pan_number VARCHAR(255) NOT NULL,
+    pan_card VARCHAR(255) NOT NULL
+);
+
+Customer Table(OLD):- 
+CREATE TABLE customer (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    full_name VARCHAR(255) NOT NULL,
+    mobile_number VARCHAR(15) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    address TEXT NOT NULL,
+    annual_income DECIMAL(10,2) NOT NULL,
+    total_policy_amount DECIMAL(10,2) NOT NULL,
+    plan_term INT(3) NOT NULL,
+    premium_paying_frequency VARCHAR(50) NOT NULL,
+    total_premium_amount DECIMAL(10,2) NOT NULL
+);
+
+Customer Table(OLD):- 
+CREATE TABLE customer (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    full_name VARCHAR(255) NOT NULL,
+    mobile_number VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    address VARCHAR(255) NOT NULL,
+    annual_income DECIMAL(10,2) NOT NULL,
+    policy_name VARCHAR(255) NOT NULL,
+    total_policy_amount DECIMAL(10,2) NOT NULL,
+    plan_term INT NOT NULL,
+    premium_paying_frequency INT NOT NULL
+);
+
+Customer Table:- 
+CREATE TABLE customer (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    full_name VARCHAR(255) NOT NULL,
+    mobile_number VARCHAR(15) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    address TEXT NOT NULL,
+    age INT NOT NULL,
+    gender VARCHAR(10) NOT NULL,
+    annual_income DECIMAL(10, 2) NOT NULL,
+    policy_name VARCHAR(255) NOT NULL,
+    total_policy_amount DECIMAL(10, 2) NOT NULL,
+    plan_term INT NOT NULL,
+    premium_paying_frequency INT NOT NULL
+);
+
+Signup-Table:-
+CREATE TABLE user (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    user_type VARCHAR(50) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    branch_name VARCHAR(255),
+    agency_code VARCHAR(50)
+);
+
+contact Table:-
+CREATE TABLE contact (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    subject VARCHAR(255) NOT NULL,
+    message TEXT NOT NULL
+);
