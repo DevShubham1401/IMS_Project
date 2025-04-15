@@ -1,2 +1,2 @@
 # IMS_Project
-This project is done for first year second semister of MCA
+This proposal outlines the implementation of a Life Insurance Management System (LIMS) designed to significantly enhance operational efficiency, customer experience, and overall business agility. The proposed LIMS leverages a robust and secure technology stack to streamline core functionalities, empower agents and policyholders, and generate valuable data-driven insights for strategic decision making.
